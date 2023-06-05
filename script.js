@@ -1,44 +1,63 @@
-// Function to handle form submission for account creation
-function handleCreateAccount(event) {
-  event.preventDefault(); // Prevent the default form submission behavior
+// Toggle Login/Signup Form
+function toggleLoginForm() {
+  var loginPopup = document.getElementById("login-popup");
+  loginPopup.style.display = (loginPopup.style.display === "block") ? "none" : "block";
+}
 
-  // Get the values entered by the user
-  var username = document.getElementById("username").value;
+// Form Validation
+function validateLoginForm() {
+  var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
 
-  // Perform validation (you can add more complex validation as needed)
-  if (username === "" || password === "") {
-    alert("Please enter a username and password.");
-    return;
+  if (email.trim() === "") {
+    alert("Please enter your email.");
+    return false;
   }
 
-  // Send the data to the server for further processing (you need to implement this part)
-  // Example: You can use AJAX or fetch() to send the data to a server-side script
-  // and handle the account creation logic there.
-}
-
-// Function to handle form submission for login
-function handleLogin(event) {
-  event.preventDefault(); // Prevent the default form submission behavior
-
-  // Get the values entered by the user
-  var loginUsername = document.getElementById("loginUsername").value;
-  var loginPassword = document.getElementById("loginPassword").value;
-
-  // Perform validation (you can add more complex validation as needed)
-  if (loginUsername === "" || loginPassword === "") {
-    alert("Please enter your username and password.");
-    return;
+  if (password.trim() === "") {
+    alert("Please enter your password.");
+    return false;
   }
 
-  // Send the data to the server for further processing (you need to implement this part)
-  // Example: You can use AJAX or fetch() to send the data to a server-side script
-  // and handle the login logic there.
+  return true;
 }
 
-// Attach event listeners to the forms
-var createAccountForm = document.getElementById("createAccountForm");
-createAccountForm.addEventListener("submit", handleCreateAccount);
+function validateSignupForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
 
-var loginForm = document.getElementById("loginForm");
-loginForm.addEventListener("submit", handleLogin);
+  if (name.trim() === "") {
+    alert("Please enter your name.");
+    return false;
+  }
+
+  if (email.trim() === "") {
+    alert("Please enter your email.");
+    return false;
+  }
+
+  if (password.trim() === "") {
+    alert("Please enter your password.");
+    return false;
+  }
+
+  return true;
+}
+
+// Submit Form
+document.getElementById("login-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  if (validateLoginForm()) {
+    // Perform login logic here
+    alert("Logged in successfully!");
+  }
+});
+
+document.getElementById("signup-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  if (validateSignupForm()) {
+    // Perform signup logic here
+    alert("Signed up successfully!");
+  }
+});
