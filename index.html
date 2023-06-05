@@ -1,82 +1,483 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kamva MindPal</title>
-  <link rel="stylesheet" href="styles.css">
-  </head>
-<body>
-  <header>
-    <!-- Navigation Bar -->
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="cta-button"><a href="#">Login</a></li>
-        <li class="cta-button"><a href="#">Sign Up</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Hero Section -->
-    <section id="hero">
-      <div class="hero-content">
-        <h1>Your Mental Health Matters</h1>
-        <p>Find peace, healing, and support with Kamva MindPal.</p>
-        <a href="#" class="cta-button">Get Started</a>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel justo mi. Donec id enim ut erat finibus consequat.</p>
-        <!-- Add more content here -->
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-      <div class="container">
-        <h2>Our Services</h2>
-        <p>Discover the range of mental health services we offer:</p>
-        <!-- Add service cards or sections here -->
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-      <div class="container">
-        <h2>What Our Clients Say</h2>
-        <!-- Add testimonial cards or sections here -->
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <!-- Add contact form or contact information here -->
-      </div>
-    </section>
-  </main>
-
-  <footer>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="70">
+  <nav class="navbar navbar-fixed-top">
     <div class="container">
-      <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
-      <ul class="social-links">
-        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">
+          <svg class="brand-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+            <path fill="#000000" d="M9.5 19c-0.084 0-0.167-0.021-0.243-0.063-0.116-0.065-2.877-1.611-5.369-4.082-0.196-0.194-0.197-0.511-0.003-0.707s0.511-0.197 0.707-0.003c1.979 1.962 4.186 3.346 4.908 3.776 0.723-0.431 2.932-1.817 4.908-3.776 0.196-0.194 0.513-0.193 0.707 0.003s0.193 0.513-0.003 0.707c-2.493 2.471-5.253 4.017-5.369 4.082-0.076 0.042-0.159 0.063-0.243 0.063z"></path>
+            <path fill="#000000" d="M1.279 11c-0.188 0-0.368-0.106-0.453-0.287-0.548-1.165-0.826-2.33-0.826-3.463 0-2.895 2.355-5.25 5.25-5.25 0.98 0 2.021 0.367 2.931 1.034 0.532 0.39 0.985 0.86 1.319 1.359 0.334-0.499 0.787-0.969 1.319-1.359 0.91-0.667 1.951-1.034 2.931-1.034 2.895 0 5.25 2.355 5.25 5.25 0 1.133-0.278 2.298-0.826 3.463-0.118 0.25-0.415 0.357-0.665 0.24s-0.357-0.415-0.24-0.665c0.485-1.031 0.731-2.053 0.731-3.037 0-2.343-1.907-4.25-4.25-4.25-1.703 0-3.357 1.401-3.776 2.658-0.068 0.204-0.259 0.342-0.474 0.342s-0.406-0.138-0.474-0.342c-0.419-1.257-2.073-2.658-3.776-2.658-2.343 0-4.25 1.907-4.25 4.25 0 0.984 0.246 2.006 0.731 3.037 0.118 0.25 0.010 0.548-0.24 0.665-0.069 0.032-0.141 0.048-0.212 0.048z"></path>
+            <path fill="#000000" d="M10.515 15c-0.005 0-0.009-0-0.013-0-0.202-0.004-0.569-0.109-0.753-0.766l-1.217-4.334-0.807 3.279c-0.158 0.643-0.525 0.778-0.73 0.8s-0.592-0.027-0.889-0.62l-0.606-1.211c-0.029-0.058-0.056-0.094-0.076-0.117-0.003 0.004-0.007 0.009-0.011 0.015-0.37 0.543-1.192 0.953-1.913 0.953h-1c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h1c0.421 0 0.921-0.272 1.087-0.516 0.223-0.327 0.547-0.501 0.891-0.478 0.374 0.025 0.708 0.279 0.917 0.696l0.445 0.89 0.936-3.803c0.158-0.64 0.482-0.779 0.726-0.783s0.572 0.125 0.751 0.76l1.284 4.576 1.178-3.608c0.205-0.628 0.582-0.736 0.788-0.745s0.59 0.068 0.847 0.677l0.724 1.719c0.136 0.322 0.578 0.616 0.927 0.616h1.5c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5h-1.5c-0.747 0-1.559-0.539-1.849-1.228l-0.592-1.406-1.274 3.9c-0.207 0.634-0.566 0.733-0.771 0.733z"></path>
+          </svg>
+          Kamva MindPal 
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about-us">Mental Ilnesses</a></li>
+          <li><a href="#our-service">Trait</a></li>
+          <li><a href="#referrer-info">Stigma</a></li>
+          <li><a href="#contact-us">Breaking Stigma</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center">Dedicated Mental Health WebSite</h1>
+          <h4 class="text-muted text-center">Focused on informing children, adolescants, adults and families. By Jash and Shiven</h4>
+        </div>
+        <div class="col-sm-12 text-center">
+          <button class="btn btn-lg btn-primary">Breaking Stigma</button>
+        </div>
+      </div>
+    </div><!-- /.container -->
+  </section><!-- /.hero -->
+
+  <!-- Mental Ilnesses -->
+  <section id="mental ilnesses" class="banner">
+    <!-- Mental Ilnesses description -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="section-header">Mental Ilnesses</div>
+
+          </div>
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <p>Mental illnesses are characterized by alterations in thinking, mood or behaviour associated with significant distress and impaired functioning. Examples of specific mental illnesses include: Mood disorders: major depression and bipolar disorder. Schizophrenia. Anxiety disorders.</p>
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section><!-- /.Mental Ilnesses description -->
+
+    <!-- Psychologists -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="section-sub-header">
+              <div class="sub-header__text">Made By</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kamva Team-->
+        <div id="kamva team" class="row">
+          <div class="profile col-sm-12">
+            <div class="col-sm-4">
+              <div class="profile-image image-ana"></div>
+            </div>
+            <div class="col-sm-8">
+              <div class="profile-name">Ayo</div>
+              <div class="profile-position">Software engineering student</div>
+              <div class="profile-description">Ayos approach to therapy is supportive, warm and non-judgemental. Ayo thinks working collaboratively with each individual, developing an understanding of each person’s unique goals and implementing individualised, tailored therapy programs.</div>
+              <button type="button" class="btn btn-link profile-link" data-toggle="modal" data-target="#anaModal">See More</button>
+              <div class="profile-contacts">
+                <div class="contact-info contact-small"><i class="material-icons">&#xE325;</i>
+                  <div class="contact-info__text">+27782571454</div>
+                </div>
+                <div class="contact-info contact-small"><i class="material-icons">&#xE0BE;</i>
+                  <div class="contact-info__text">ayocoding12@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.kamava -->
+
+        <!-- Kamva -->
+        <div id="kamva" class="row">
+          <div class="profile col-sm-12">
+            <div class="col-sm-4">
+              <div class="profile-image image-Karlie"></div>
+            </div>
+            <div class="col-sm-8">
+              <div class="profile-name">fix here </div>
+              <div class="profile-position">fix here</div>
+              <div class="profile-description">fix here</div>
+              <button type="button" class="btn btn-link profile-link" data-toggle="modal" data-target="#belindaModal">See More</button>
+              <div class="profile-contacts">
+                <div class="contact-info contact-small"><i class="material-icons">&#xE325;</i>
+                  <div class="contact-info__text">no number</div>
+                </div>
+                <div class="contact-info contact-small"><i class="material-icons">&#xE0BE;</i>
+                  <div class="contact-info__text">ayocoding12@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.kamva -->
+
+      </div><!-- /.container -->
+    </section><!-- /.psychologists -->
+
+    <!-- We can help with -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="section-sub-header">
+              <div class="sub-header__text">We'll be going over</div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="help-list">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="help-list">
+              <li>Autism Spectrum</li>
+              <li>ADHD</li>
+              <li>Depression</li>
+              <li>OCD</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="help-list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section><!-- /.we can help with -->
+
+  </section><!-- /.about us -->
+
+  <!-- Our Service -->
+  <section id="our-service" class="banner">
+    <div class="section-header">Traits</div>
+
+    <!-- Making an appointment -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="section-sub-header">
+              <div class="sub-header__text">ASD Traits</div>
+            </div>
+            <p>
+              Autism spectrum disorder is a condition related to the brain development that impacts how a person perceives and socialises with others, causing problems in social interactions and communication. The disorder also includes limited and repetitive patterns of behaviour.
+            </p>
+            <p>
+              Autism is not so bad then you think people with autism have a great memory and an amazing ability to recall facts. Autistic people also tend to be visual thinkers. As a result, they can visualise solutions to problems, as well as other things, better than most people can.
+            </p>
+            <p>
+              No matter what traits of autism you or your loved one may have, a person with autism has their own unique strengths and abilities. There are many famous people with autism spectrum disorder who have used their strengths and abilities to achieve success, fame, or to accomplish amazing things.
+            </p>
+            <p>
+              Restricted interests is a characteristic of autism. This kind of behaviour is restricted. Restricted interests refer to a person with ASD's great devotion for a certain subject. Persons with autism may have a small and narrow range of interests, but people without autism frequently have a wide range of interests, may focus easily from one topic or activity to another, and may not commit to excelling at one particular area.The success that many persons with ASD have in life may be attributed to this trait. The person with ASD can use this interest to achieve great things if they are able to focus and keep up a single core interest for years or even most of their lives.
+            </p>
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section><!-- /.making an appointment -->
+
+    <!-- Initial Consultation -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="section-sub-header">
+              <div class="sub-header__text">ADHD Traits</div>
+            </div>
+            <p>
+              ADHD is one of the most common neurodevelopmental disorders of childhood. It is usually first diagnosed in childhood and often lasts into adulthood. Children with ADHD may have trouble paying attention, controlling impulsive behaviours (may act without thinking about what the result will be), or be overly active.
+            </p>
+            <p>
+              Living with ADHD may give the person a different perspective on life and encourage them to approach tasks and situations with a thoughtful eye. As a result, some with ADHD may be inventive thinkers. Other words to describe them may be original, artistic, and creative. Being hyper focused.
+            </p>
+            <p>
+              Hyperactivity and impulsiveness The main signs of hyperactivity and impulsiveness are: being unable to sit still, especially in calm or quiet surroundings constantly fidgeting being unable to concentrate on tasks excessive physical movement excessive talking being unable to wait their turn acting without thinking interrupting conversations little or no sense of danger
+            </p>
+            <p>
+              Inattention:
+
+              short attention span for age (difficulty sustaining attention)
+
+              Difficulty listening to others
+
+              Difficulty attending to details
+
+              Easily distracted
+
+              Forgetfulness
+
+              Poor organizational skills for age
+
+              Poor study skills for age
+            </p>
+            <p>
+              Impulsivity:
+
+              Often interrupts others
+
+              Has difficulty waiting for his or her turn in school and/or social games
+
+              Tends to blurt out answers instead of waiting to be called upon
+
+              Takes frequent risks, and often without thinking before acting
+            </p>
+            <p>
+              Hyperactivity:
+
+              Seems to be in constant motion; runs or climbs, at times with no apparent goal except motion
+
+              Has difficulty remaining in his/her seat even when it is expected
+
+              Fidgets with hands or squirms when in his or her seat; fidgeting excessively
+
+              Talks excessively
+
+              Has difficulty engaging in quiet activities
+
+              Loses or forgets things repeatedly and often
+
+              Inability to stay on task; shifts from one task to another without bringing any to completion
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section><!-- /.initial consulatation -->
+
+    <!-- The Therapy Process -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="section-sub-header">
+              <div class="sub-header__text">OCD Traits</div>
+            </div>
+            <p>
+              Oppressive Compulsive Disorder is the involvement of unwanted thoughts that are disturbing and turn into obsessions in a person's mind (usually a child or a teen). These thoughts cause great discomfort and anxiety. The person will then try to reduce the discomfort and anxiety by engaging in repetitive physical or mental behavior known as compulsions.
+            </p>
+            <p>
+              The cause of OCD is not exactly known by scientists. Genetics, brain abnormalities, and the environment itself can play a role in causing or increasing OCD in a person. It often does start in the teens era or in early adulthood but might happen in childhood. OCD affects both men and women. It does appear to run in families thus strengthening the genetics theory. Other mental illnesses, eating disorders, and substance abuse also impact OCD and increase its power.
+            </p>
+            <p>
+              The symptoms of OCD are obsessions and compulsions. Obsessions are undiscovered thoughts, worries, and fears. They happen a lot for people with OCD and cause great anxiety. Reasoning doesn’t help to control those obsessions. Some types of obsessions are:
+
+              Repeated doubts
+              A needed thing to do something in a very specific order
+              Thoughts about violence and hurting others
+              Fear of contamination or dirt
+            </p>
+            <p>
+              These obsessions are then expressed for people with OCD. Obsessions like these are controlled with compulsions which is repetitive behavior. Compulsions are actually made up by a person who has OCD. Examples of compulsions included:
+
+              Washing and cleaning
+              Checking multiple times
+              Counting
+              Demanding reassurance
+            </p>
+            <p>
+              These compulsions are also seen quite vividly depending on the person with OCD.
+            </p>
+            <p>
+              This is the general definition of OCD and its breakdown. If you are experiencing any of the examples that I listed or just feel anxiety. Please call your doctor just in case. </p>
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section><!-- /.therapy process -->
+
+    <!-- Fees & Rebates -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="section-sub-header">
+              <div class="sub-header__text">Depression Traits</div>
+            </div>
+            <p>
+              Depression is a common illness as 5% of the total adult population suffer from depression. The effects of depression are to suffer greatly and function poorly at work, school, and even at your own house with your family. At the worst stage of depression, the person could suicide. Treatment for this illness is possible but a lot of middle and low class people could receive no treatment at all. Depression itself is when a person experiences a mood of extreme negativity (sadness, irritability, emptiness, anger, loneliness). It could also be a loss of happiness in activities that would make anyone else without depression happy.
+            </p>
+            <p>
+              Symptoms of this illness would be:
+
+              Poor concentration to work or school
+              Feeling guilt or losing your self-worth
+              Looks to towards the future and thinks that it will be bad
+              Thoughts about dying
+              Insomnia
+              Losing appetite or gaining it suddenly
+              Low energy and fatigue
+            </p>
+            <p>
+              Depression is an illness indeed. However, the symptoms won’t last forever. In a depressed person’s life, they will get depression episodes which are at least 2 weeks long. Depression episodes are a part of a depressed individual's life and that is when most of the symptoms happen, not all the time like you would expect.
+            </p>
+            <p>
+              Some individuals could only get one depression episode while others could get multiple. You can guess that something bad happened to start up this depression episode like a bad day at school or at work and something terrible happened. This is mostly correct.
+            </p>
+            <p>
+              This is the general definition of depression and its breakdown. If you are experiencing any symptoms that I listed or just feel anxiety. Please call your doctor just in case.
+            </p>
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section><!-- /.fees & rebates -->
+  </section><!-- /.our service -->
+
+  <!-- Referrer Info -->
+  <section id="referrer-info" class="banner">
+    <div class="section-header">Stigma</div>
+
+    <!-- Referrals for kamva-->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="section-sub-header">
+              <div class="sub-header__text"> Mental Ilness Stigma's</div>
+            </div>
+            <p>
+              There are many different types of unwanted and dangerous stigmas about mental illness. These stigmas range from people thinking about a person's emotions to downright saying that someone is stupid because of a mental illness. These are a few that we need to talk about.
+            </p>
+            <p>
+              Autism is expressed by people as a defect to a person and that defect to society makes them stupid and have no common sense. In other words, autism is an insult to society. This is one of the most hurtful statements that people could say because it disrespects people with autism so much as well as spreading hate to others.
+            </p>
+            <p>
+              Depression is another mental illness that is viewed by the community as extreme sadness and the word itself is used daily to over-exaggerate: "I'm so depressed that didn't kill the final boss in injustice 2". This is quite unfair to people with depression as the challenges they face are much harder than we think in society.
+            </p>
+            <p>
+              OCD is also viewed by the public in a prejudiced way. Without a doubt, people don't understand that compulsions come from obsessions. This means that society thinks OCD is just some psychopathic actions like counting and checking stuff multiple times.
+            </p>
+            <p>
+              ADHD:People still don’t believe that ADHD is a medical condition. They see it as an excuse for sloppiness or laziness. The fact that ADHD symptoms appear to come and go, depending on the situation, only feeds the doubters’ contempt. They say, or think, things like, “Why can’t you pull it together? You’re fine with certain friends — how come you can’t sit down and do your homework?”Another factor is the widespread negative feeling about the use of psychiatric drugs. In recent years, there’s been a surge in the number of people taking ADHD medication. Some wonder if this increase is justified. Finally, the fact that ADHD can undermine academic performance worsens the stigma. Our society seems to think, “If your grades are poor, you’re not worth much.” This is especially true if the cause of poor performance is hidden, as it is with ADHD.
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section><!-- /.referrals for kamva -->
+  </section><!-- /.referrer info -->
+
+  <footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="footer-header">Breaking Stigma's</div>
+          <p>Steps to cope with stigma
+            Here are some ways you can deal with stigma:
+
+          </p>
+          <p>
+            Get treatment. You may be reluctant to admit you need treatment. Don't let the fear of being labeled with a mental illness prevent you from seeking help. Treatment can provide relief by identifying what's wrong and reducing symptoms that interfere with your work and personal life.
+          </p>
+          <p>
+            Don't let stigma create self-doubt and shame. Stigma doesn't just come from others. You may mistakenly believe that your condition is a sign of personal weakness or that you should be able to control it without help. Seeking counseling, educating yourself about your condition and connecting with others who have mental illness can help you gain self-esteem and overcome destructive self-judgment.
+          </p>
+          <p>
+            Don't isolate yourself. If you have a mental illness, you may be reluctant to tell anyone about it. Your family, friends, clergy or members of your community can offer you support if they know about your mental illness. Reach out to people you trust for the compassion, support and understanding you need.
+          </p>
+          <p>
+            Don't equate yourself with your illness. You are not an illness. So instead of saying "I'm bipolar," say "I have bipolar disorder." Instead of calling yourself "a schizophrenic," say "I have schizophrenia."
+          </p>
+          <p>
+            Join a support group. Some local and national groups, such as the National Alliance on Mental Illness (NAMI), offer local programs and internet resources that help reduce stigma by educating people who have mental illness, their families and the general public. Some state and federal agencies and programs, such as those that focus on vocational rehabilitation and the Department of Veterans Affairs (VA), offer support for people with mental illness.
+          </p>
+          <p>
+            Get help at school. If you or your child has a mental illness that affects learning, find out what plans and programs might help. Discrimination against students because of a mental illness is against the law, and educators at primary, secondary and college levels are required to accommodate students as best they can. Talk to teachers, professors or administrators about the best approach and resources. If a teacher doesn't know about a student's disability, it can lead to discrimination, barriers to learning and poor grades.
+          </p>
+          <p>
+            Speak out against stigma. Consider expressing your opinions at events, in letters to the editor or on the internet. It can help instill courage in others facing similar challenges and educate the public about mental illness.
+          </p>
+        </div><!-- /.col sm 12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
   </footer>
 
-  <!-- JavaScript files can be included here if needed -->
+  <!-- Modal -->
+  <div class="modal fade" id="anaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <!--         <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+          <div class="profile-image image-ana"></div>
+          <div class="profile-name text-center">Dr. karlie</div>
+          <div class="profile-position text-center">Clinical Psychologist</div>
+        </div>
+        <div class="modal-body">
+          <p>
+            karlies approach to therapy is supportive, warm and non-judgemental. She works collaboratively with each individual, developing an understanding of each person’s unique goals and implementing individualised, tailored therapy programs.
+          </p>
+          <p>
+            karlie is experienced in cognitive-behavioural therapy (CBT), mindfulness-based CBT, and schema-focussed therapy. She also has an interest and experience in working with parents and carers within the “Integrated Family Intervention Program” framework.
+          </p>
+          <p>
+            Karlie has been providing psychological assessment and treatment to children, adolescents, adults and families for over 8 years. She has experience in therapies for anxiety, depression, trauma, sleep problems, grief and loss, self-esteem and emotion regulation difficulties, and impulse control disorders.
+          </p>
+          <p>
+            One of her areas of interest is also in working with Autism Spectrum conditions, including Asperger’s Syndrome. Many individuals with Autism Spectrum Disorder (ASD) experience additional mental health problems, including depression, anxiety, obsessive compulsive disorder, tics, and behavioural and emotional regulation difficulties. Ana has acquired substantial experience in supporting people who are struggling with multiple mental health difficulties. She also has experience in providing therapy for the siblings, parents, carers and partners, of people working through mental health conditions.
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div><!-- /.modal body-->
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div><!-- /.modal footer-->
+      </div><!-- /.modal content-->
+    </div><!-- /.modal dialog -->
+  </div><!-- /.modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="belindaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <!--         <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+          <div class="profile-image image-belinda"></div>
+          <div class="profile-name text-center">Belinda Preston</div>
+          <div class="profile-position text-center">Psychologist</div>
+        </div>
+        <div class="modal-body">
+          <p>
+            Belinda Preston is a Registered Psychologist who specialises in working with children, adolescents and adults. Belinda has six years’ experience working as a Psychologist. Belinda has specialised in assisting people with experiences of childhood sexual abuse, physical or emotional abuse, neglect, sexual assault, problematic mental health issues, risk of suicide, drug and alcohol abuse or dependence issues. Additionally, Belinda has experience in relation to medico-legal issues, conducts Psychological Assessments, treatment and completes court reports.
+          </p>
+          <p>
+            Furthermore, Belinda has fifteen years’ experience working in the treatment of mental health conditions, drug and alcohol dependence or abuse issues and working with victims or perpetrators of serious crime. Belinda has worked extensively with people detained in custody or who have committed serious or violent criminal offences.
+          </p>
+          <p>
+            Belinda’s approach to therapy is compassionate, collaborative and non-judgemental. Belinda aims to develop client centred treatment plans to address the specific needs of the person. This process occurs in collaboration with the client.
+          </p>
+          <p>
+            Belinda is experienced in a range of psychological approaches including cognitive-behavioural therapy (CBT), dialectical behavioural therapy (DBT), acceptance and commitment therapy (ACT), and refers to trauma Informed practices. Belinda uses her extensive experience and evidence based practices to determine which therapeutic approach would be most suitable for each individual by assessing what would be the most effective approach or combination of approaches to assist the person to improve the their mental health and overall quality of life.
+          </p>
+          <p>
+            Belinda is a Medicare accredited Psychologist and a Victim Services approved counsellor with the Attorney General and Justice Department.
+          </p>
+          <p>
+            Belinda is a member of the Australian Psychological Society (APS) and is the Coordinator of the Mental Health Professional Network, Central Coast. Belinda is also trained to facilitate the ASIST (Applied Suicide Intervention Skills Training) program and has an interest in reducing the suicide rate in Australia and internationally.
+          </p>
+          <p>
+            Belinda welcomes any inquiries, please feel free to contact her if you have any questions or require further information.
+          </p>
+        </div><!-- /.modal body-->
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div><!-- /.modal footer-->
+      </div><!-- /.modal content-->
+    </div><!-- /.modal dialog -->
+  </div><!-- /.modal -->
 </body>
-</html>
