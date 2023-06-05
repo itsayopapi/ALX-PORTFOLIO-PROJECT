@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamva MindPal</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS styles */
+    /* ... (existing styles) ... */
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="cta-button"><a href="#">Login</a></li>
+        <li class="cta-button"><a href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Your Mental Health Matters</h1>
+        <p>Find peace, healing, and support with Kamva MindPal.</p>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel justo mi. Donec id enim ut erat finibus consequat.</p>
+        <!-- Add more content here -->
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p>Discover the range of mental health services we offer:</p>
+        <!-- Add service cards or sections here -->
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="container">
+        <h2>What Our Clients Say</h2>
+        <!-- Add testimonial cards or sections here -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <!-- Add contact form or contact information here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript code
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
