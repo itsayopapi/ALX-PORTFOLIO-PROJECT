@@ -1,33 +1,63 @@
-// Pseudo element contains picture as background to allow custom placement
-		&:before
-			content: ''
-			display: block
-			+absolute(-10px,-12px,null,null)
-			width: 150px
-			height: 197.25px
-			background:
-				size: cover
-				position: center center
-		
-	.profile-name
-		margin-bottom: 5px
-		font:
-			size: 1rem
-			weight: 400
-		text-align: center
-		color: $text-dark
+/* Header styles */
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-	.profile-position
-		margin-bottom: 15px
-		font:
-			size: 0.875rem
-			weight: 400
-		text-align: center
-		color: $grey
-	
-	p
-		margin-bottom: 25px
-		font:
-			size: 0.875rem
-		color: $text-dark
-		letter-spacing: 0.04rem		
+/* Navigation menu styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Form styles */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
