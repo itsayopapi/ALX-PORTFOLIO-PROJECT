@@ -1,19 +1,28 @@
 function toggleLoginForm() {
-  var loginPopup = document.getElementById("login-popup");
-  loginPopup.classList.toggle("show");
+  var loginPopup = document.getElementById('login-popup');
+  loginPopup.classList.toggle('show-popup');
 }
 
 function toggleSignupForm() {
-  var signupPopup = document.getElementById("signup-popup");
-  signupPopup.classList.toggle("show");
+  var signupForm = document.getElementById('signup-form');
+  signupForm.classList.toggle('show-form');
 }
 
 function validateLoginForm() {
-  // Add your login form validation logic here
-  return true; // Return false if validation fails and prevent form submission
-}
+  var emailInput = document.getElementById('login-email');
+  var passwordInput = document.getElementById('login-password');
 
-function validateSignupForm() {
-  // Add your sign-up form validation logic here
-  return true; // Return false if validation fails and prevent form submission
+  if (emailInput.value === '') {
+    alert('Please enter your email.');
+    return false;
+  }
+
+  if (passwordInput.value === '') {
+    alert('Please enter your password.');
+    return false;
+  }
+
+  // Perform login logic here
+
+  return true;
 }
