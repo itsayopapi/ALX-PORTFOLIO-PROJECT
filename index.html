@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Kamva MindPal</title>
   <link rel="stylesheet" href="styles.css">
@@ -28,21 +28,34 @@
     </p>
   </div>
 
-  <footer>
-    <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
+    </div>
   </footer>
 
   <div id="login-popup" class="login-popup">
     <div class="login-form">
       <h2>Login</h2>
       <form id="login-form" onsubmit="return validateLoginForm()">
-        <label for="login-email">Email</label>
-        <input type="email" id="login-email" placeholder="Email" required>
-        <label for="login-password">Password</label>
-        <input type="password" id="login-password" placeholder="Password" required autocomplete="off">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
         <button type="submit">Login</button>
       </form>
       <p>Don't have an account? <a href="#" onclick="toggleSignupForm()">Sign up</a></p>
+    </div>
+  </div>
+
+  <div id="signup-popup" class="signup-popup">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form id="signup-form" onsubmit="return validateSignupForm()">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" onclick="toggleLoginForm()">Log in</a></p>
     </div>
   </div>
 
