@@ -127,3 +127,55 @@ nav ul li a:hover {
   padding: 20px;
   text-align: center;
 }
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  /* Adjustments for small screens */
+  .container {
+    margin: 10px;
+  }
+  
+  .heading {
+    font-size: 20px;
+  }
+  
+  .login-form,
+  .signup-form {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for medium screens */
+  .container {
+    margin: 15px;
+  }
+  
+  .heading {
+    font-size: 22px;
+  }
+  
+  .login-form,
+  .signup-form {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Adjustments for large screens */
+  .container {
+    margin: 20px;
+  }
+  
+  .heading {
+    font-size: 24px;
+  }
+  
+  .login-form,
+  .signup-form {
+    width: 90%;
+    max-width: 500px;
+  }
+}
