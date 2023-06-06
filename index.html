@@ -3,6 +3,7 @@
 <head>
   <title>Kamva MindPal</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -12,22 +13,20 @@
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="get-started-btn"><a href="#" type="button" onclick="toggleLoginForm()">Get Started</a></li>
+        <li class="get-started-btn"><a href="#" onclick="toggleLoginForm()">Get Started</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="container">
-      <h1 class="heading">Welcome to Kamva MindPal</h1>
-      <p class="intro">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ex lacus. Suspendisse potenti. Maecenas sollicitudin tortor eu risus lobortis varius. Donec auctor interdum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vehicula rhoncus lacinia. Duis quis tincidunt ligula. Sed tincidunt vulputate gravida. Fusce a felis a mi placerat vestibulum.
-      </p>
-      <p>
-        Nullam rhoncus diam quis fermentum consectetur. Mauris non mauris in sem consequat sodales. Curabitur fermentum congue ante, nec semper mauris malesuada eu. Vivamus venenatis mollis odio, a condimentum eros luctus id. Sed pellentesque pharetra nulla, non fringilla felis dapibus sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In sagittis tortor et facilisis varius. Mauris eu enim felis.
-      </p>
-    </section>
-  </main>
+  <div class="container">
+    <h1 class="heading">Welcome to Kamva MindPal</h1>
+    <p class="intro">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ex lacus. Suspendisse potenti. Maecenas sollicitudin tortor eu risus lobortis varius. Donec auctor interdum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vehicula rhoncus lacinia. Duis quis tincidunt ligula. Sed tincidunt vulputate gravida. Fusce a felis a mi placerat vestibulum.
+    </p>
+    <p>
+      Nullam rhoncus diam quis fermentum consectetur. Mauris non mauris in sem consequat sodales. Curabitur fermentum congue ante, nec semper mauris malesuada eu. Vivamus venenatis mollis odio, a condimentum eros luctus id. Sed pellentesque pharetra nulla, non fringilla felis dapibus sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In sagittis tortor et facilisis varius. Mauris eu enim felis.
+    </p>
+  </div>
 
   <footer>
     <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
@@ -44,22 +43,6 @@
         <button type="submit">Login</button>
       </form>
       <p>Don't have an account? <a href="#" onclick="toggleSignupForm()">Sign up</a></p>
-    </div>
-  </div>
-
-  <div id="signup-popup" class="signup-popup">
-    <div class="signup-form">
-      <h2>Sign Up</h2>
-      <form id="signup-form" onsubmit="return validateSignupForm()">
-        <label for="signup-name">Name</label>
-        <input type="text" id="signup-name" placeholder="Name" required>
-        <label for="signup-email">Email</label>
-        <input type="email" id="signup-email" placeholder="Email" required>
-        <label for="signup-password">Password</label>
-        <input type="password" id="signup-password" placeholder="Password" required autocomplete="off">
-        <button type="submit">Sign Up</button>
-      </form>
-      <p>Already have an account? <a href="#" onclick="toggleSignupForm()">Log in</a></p>
     </div>
   </div>
 
