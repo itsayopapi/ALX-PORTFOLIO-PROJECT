@@ -1,28 +1,19 @@
 function toggleLoginForm() {
-  var loginPopup = document.getElementById('login-popup');
-  loginPopup.classList.toggle('show-popup');
+  var loginPopup = document.getElementById("login-popup");
+  loginPopup.style.display = loginPopup.style.display === "none" ? "block" : "none";
 }
 
 function toggleSignupForm() {
-  var signupForm = document.getElementById('signup-form');
-  signupForm.classList.toggle('show-form');
+  var signupPopup = document.getElementById("signup-popup");
+  signupPopup.style.display = signupPopup.style.display === "none" ? "block" : "none";
 }
 
 function validateLoginForm() {
-  var emailInput = document.getElementById('login-email');
-  var passwordInput = document.getElementById('login-password');
+  // Add your login form validation logic here
+  return true;
+}
 
-  if (emailInput.value === '') {
-    alert('Please enter your email.');
-    return false;
-  }
-
-  if (passwordInput.value === '') {
-    alert('Please enter your password.');
-    return false;
-  }
-
-  // Perform login logic here
-
+function validateSignupForm() {
+  // Add your signup form validation logic here
   return true;
 }
