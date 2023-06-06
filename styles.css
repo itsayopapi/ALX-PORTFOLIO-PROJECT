@@ -1,19 +1,13 @@
-/* styles.css */
-
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #333;
   padding: 10px;
+  color: #fff;
 }
 
 nav ul {
@@ -24,25 +18,22 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 10px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 5px;
+  padding: 10px;
 }
 
 .container {
   max-width: 800px;
   margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
+  padding: 0 20px;
 }
 
 .heading {
-  font-size: 24px;
-  margin-bottom: 10px;
+  color: #333;
 }
 
 .intro {
@@ -50,67 +41,68 @@ nav ul li a {
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
+  background-color: #f4f4f4;
   padding: 10px;
+  text-align: center;
 }
 
-.login-popup,
-.signup-popup {
+.login-popup {
   display: none;
   position: fixed;
-  top: 0;
+  z-index: 1;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.login-popup .login-form,
-.signup-popup .signup-form {
+.login-popup .login-form {
   background-color: #fff;
+  max-width: 400px;
+  margin: 100px auto;
   padding: 20px;
-  width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
-.login-popup h2,
-.signup-popup h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.login-popup h2 {
+  margin-top: 0;
 }
 
-.login-popup form,
-.signup-popup form {
-  margin-bottom: 10px;
+.login-popup form {
+  display: grid;
+  gap: 10px;
 }
 
-.login-popup input,
-.signup-popup input {
-  width: 100%;
+.login-popup form label {
+  font-weight: bold;
+}
+
+.login-popup form input {
   padding: 5px;
-  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
 }
 
-.login-popup button,
-.signup-popup button {
+.login-popup form button {
+  padding: 10px;
   background-color: #333;
   color: #fff;
   border: none;
-  padding: 5px 10px;
   cursor: pointer;
 }
 
-.login-popup p,
-.signup-popup p {
+.login-popup p {
   margin-top: 10px;
+  text-align: center;
 }
 
-.show {
+.login-popup p a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.show-popup {
   display: block;
 }
