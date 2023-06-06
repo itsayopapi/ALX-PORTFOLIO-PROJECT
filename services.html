@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Services - Kamva MindPal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="get-started-btn"><a href="#" onclick="toggleLoginForm()">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h1 class="heading">Our Services</h1>
+    <p class="intro">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ex lacus. Suspendisse potenti. Maecenas sollicitudin tortor eu risus lobortis varius. Donec auctor interdum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vehicula rhoncus lacinia. Duis quis tincidunt ligula. Sed tincidunt vulputate gravida. Fusce a felis a mi placerat vestibulum.
+    </p>
+    <p>
+      Nullam rhoncus diam quis fermentum consectetur. Mauris non mauris in sem consequat sodales. Curabitur fermentum congue ante, nec semper mauris malesuada eu. Vivamus venenatis mollis odio, a condimentum eros luctus id. Sed pellentesque pharetra nulla, non fringilla felis dapibus sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In sagittis tortor et facilisis varius. Mauris eu enim felis.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
+  </footer>
+
+  <div id="login-popup" class="login-popup">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form id="login-form" onsubmit="return validateLoginForm()">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" placeholder="Email" required>
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Password" required autocomplete="off">
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="toggleSignupForm()">Sign up</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
