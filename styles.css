@@ -104,10 +104,12 @@ nav ul li a:hover {
 
 .issue h3 {
   color: #333;
+  font-size: 24px;
 }
 
 .issue p {
   color: #555;
+  font-size: 24px;
 }
 
 .issue-link {
