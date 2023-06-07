@@ -1,24 +1,10 @@
-function toggleSignupForm() {
-  var signupForm = document.getElementById("signup-popup");
-  signupForm.classList.toggle("show");
-}
-
+// Toggle login/signup pop-up forms
 function toggleLoginForm() {
-  var signupForm = document.getElementById("signup-popup");
-  signupForm.classList.remove("show");
-
-  var loginForm = document.getElementById("login-popup");
-  loginForm.classList.toggle("show");
+  var loginPopup = document.getElementById("login-popup");
+  loginPopup.style.display = (loginPopup.style.display === "block") ? "none" : "block";
 }
 
-function validateSignupForm() {
-  // Add your validation logic here
-  return true; // For demonstration purposes, always return true
+function toggleSignupForm() {
+  var signupPopup = document.getElementById("signup-popup");
+  signupPopup.style.display = (signupPopup.style.display === "block") ? "none" : "block";
 }
-
-function validateLoginForm() {
-  // Add your validation logic here
-  return true; // For demonstration purposes, always return true
-}
-
-document.getElementById("get-started-btn").addEventListener("click", toggleSignupForm);
