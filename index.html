@@ -13,7 +13,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="get-started-btn"><a href="#" onclick="toggleLoginForm()">Get Started</a></li>
+        <li class="get-started-btn" id="get-started-btn">Get Started</li>
       </ul>
     </nav>
   </header>
@@ -21,17 +21,45 @@
   <div class="container">
     <h1 class="heading">Welcome to Kamva MindPal</h1>
     <p class="intro">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ex lacus. Suspendisse potenti. Maecenas sollicitudin tortor eu risus lobortis varius. Donec auctor interdum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vehicula rhoncus lacinia. Duis quis tincidunt ligula. Sed tincidunt vulputate gravida. Fusce a felis a mi placerat vestibulum.
+      Welcome to Kamva MindPal, your trusted partner in mental health care. We are dedicated to providing comprehensive support and guidance to individuals seeking to improve their mental well-being and lead fulfilling lives. At Kamva MindPal, we understand that mental health is a crucial aspect of overall well-being, and we are here to help you navigate the challenges and complexities of your mental health journey.
     </p>
     <p>
-      Nullam rhoncus diam quis fermentum consectetur. Mauris non mauris in sem consequat sodales. Curabitur fermentum congue ante, nec semper mauris malesuada eu. Vivamus venenatis mollis odio, a condimentum eros luctus id. Sed pellentesque pharetra nulla, non fringilla felis dapibus sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In sagittis tortor et facilisis varius. Mauris eu enim felis.
+      Our team of experienced mental health professionals is committed to delivering personalized care and evidence-based interventions. Whether you are dealing with anxiety, depression, stress, or any other mental health issue, we offer a range of services tailored to meet your unique needs. Through therapy, counseling, educational resources, and a supportive community, we aim to empower you on your path to healing and personal growth.
     </p>
+    <p>
+      At Kamva MindPal, we believe in a holistic approach to mental health care. We not only focus on addressing the symptoms but also strive to identify and address the underlying factors contributing to your mental health concerns. Our aim is to help you develop healthy coping strategies, enhance self-awareness, and build resilience to effectively manage life's challenges.
+    </p>
+    <p>
+      We invite you to explore our website and discover the valuable resources and services we offer. Whether you are seeking information about mental health conditions, looking for professional guidance, or searching for practical tools to support your well-being, Kamva MindPal is here to assist you every step of the way.
+    </p>
+
+    <h2 class="sub-heading">Mental Health Issues</h2>
+    <div class="mental-health-issues">
+      <div class="issue">
+        <h3>Anxiety</h3>
+        <p>Anxiety can significantly impact your daily life, but there is hope. Learn more about anxiety and find the support you need.</p>
+        <a class="issue-link" href="anxiety.html">Learn More</a>
+        <a class="resource-link" href="https://www.youtube.com/playlist?list=PLm1rRoFob2Tp8gPFF-XAeJbfzX47RHfy1">YouTube Resources</a>
+      </div>
+      <div class="issue">
+        <h3>Depression</h3>
+        <p>Depression can be overwhelming, but you don't have to face it alone. Explore resources and treatment options for depression.</p>
+        <a class="issue-link" href="depression.html">Learn More</a>
+        <a class="resource-link" href="https://www.youtube.com/playlist?list=PLm1rRoFob2Tp8gPFF-XAeJbfzX47RHfy1">YouTube Resources</a>
+      </div>
+     
+
+ <div class="issue">
+        <h3>Stress</h3>
+        <p>Stress is a common experience, but managing it is crucial for your well-being. Discover effective strategies to cope with stress.</p>
+        <a class="issue-link" href="stress.html">Learn More</a>
+        <a class="resource-link" href="https://www.youtube.com/playlist?list=PLm1rRoFob2Tp8gPFF-XAeJbfzX47RHfy1">YouTube Resources</a>
+      </div>
+    </div>
   </div>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
   </footer>
 
   <div id="login-popup" class="login-popup">
@@ -53,12 +81,12 @@
         <input type="text" id="name" placeholder="Name" required>
         <input type="email" id="email" placeholder="Email" required>
         <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
         <button type="submit">Sign Up</button>
       </form>
       <p>Already have an account? <a href="#" onclick="toggleLoginForm()">Log in</a></p>
     </div>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
