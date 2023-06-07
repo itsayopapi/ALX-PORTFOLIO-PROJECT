@@ -5,7 +5,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color:#D3D3D3;
+  background-color: #FFE5B4;
+  font-size: 20px; /* Adjusted font size */
 }
 
 .container {
@@ -47,7 +48,7 @@ nav ul li a:hover {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -75,17 +76,23 @@ nav ul li a:hover {
 
 /* Main Content Styles */
 
+h1 {
+  font-size: 28px; /* Adjusted font size */
+}
+
 .heading {
   color: #333;
 }
 
 .intro {
   color: #555;
+  font-size: 20px; /* Adjusted font size */
 }
 
 .sub-heading {
   color: #333;
   margin-top: 40px;
+  font-size: 24px; /* Adjusted font size */
 }
 
 .mental-health-issues {
@@ -99,17 +106,15 @@ nav ul li a:hover {
   margin-bottom: 20px;
   padding: 10px;
   background-color: #f9f9f9;
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .issue h3 {
   color: #333;
-  font-size: 24px;
 }
 
 .issue p {
   color: #555;
-  font-size: 24px;
 }
 
 .issue-link {
@@ -143,7 +148,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
@@ -154,7 +159,7 @@ footer {
   margin: 100px auto;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .login-form h2,
