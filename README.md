@@ -50,8 +50,8 @@ The about us section introduces visitors to the team behind Kamva MindPal. It pr
 
 To set up Kamva MindPal locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/itsayopapi/HTML.git`
-2. Navigate to the project directory: `cd HTML`
+1. Clone the repository: `git clone https://github.com/itsayopapi/KamvaMindPal.git`
+2. Navigate to the project directory: `cd KamvaMindPal `
 3. Open the index.html file in your preferred web browser.
 
 ## Usage
