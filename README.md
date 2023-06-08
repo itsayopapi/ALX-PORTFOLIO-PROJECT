@@ -1,6 +1,6 @@
 # Kamva MindPal
 
-![Kamva MindPal](lhttps://github.com/itsayopapi/ALX-PORTFOLIO-PROJECT/blob/main/Kamva%20MindPal.png)
+![Kamva MindPal](Kamva MindPal.png)
 
 ## Description
 
