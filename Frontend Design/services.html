@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kamva MindPal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="get-started-btn" id="get-started-btn">Get Started</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="heading">Welcome to Kamva MindPal</h1>
+    
+    <h2 class="sub-heading">Services</h2>
+    <p class="intro">
+      At Kamva MindPal, we offer a range of services designed to address various mental health concerns and support your well-being. Our team of professionals is dedicated to providing personalized care and helping you achieve mental wellness.
+    </p>
+
+    <div class="services">
+      <div class="service">
+        <h3>Therapy Sessions</h3>
+        <p>Our licensed therapists provide individual, couples, and family therapy sessions. We offer a safe and supportive environment where you can explore your thoughts and emotions, gain insights, and develop coping strategies.</p>
+      </div>
+      <div class="service">
+        <h3>Mindfulness Workshops</h3>
+        <p>Join our mindfulness workshops to learn and practice techniques for stress reduction, relaxation, and cultivating present-moment awareness. These workshops are suitable for individuals of all experience levels.</p>
+      </div>
+      <div class="service">
+        <h3>Support Groups</h3>
+        <p>Connect with others who share similar experiences in our supportive and confidential support groups. Our facilitators create a nurturing space where you can share, learn, and find encouragement on your mental health journey.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
+    <ul class="social-media-links">
+    <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+    <li><a href="https://www.linkedin.com/in/ayo-hassan-a11734262" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="https://twitter.com/karlieemoyo" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <li><a href="https://github.com/Mdlalose4life" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+  </ul>
+  </footer>
+
+  <div id="login-popup" class="login-popup">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form id="login-form" onsubmit="return validateLoginForm()">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="toggleSignupForm()">Sign up</a></p>
+    </div>
+  </div>
+
+  <div id="signup-popup" class="signup-popup">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form id="signup-form" onsubmit="return validateSignupForm()">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" onclick="toggleLoginForm()">Log in</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
