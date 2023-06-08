@@ -1,6 +1,5 @@
 # Kamva MindPal
 
-![Kamva MindPal](Kamva MindPal.png)
 
 ## Description
 
