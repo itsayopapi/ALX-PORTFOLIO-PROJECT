@@ -1,6 +1,6 @@
 # Kamva MindPal
 
-![Kamva MindPal](path/to/cover/image.jpg)
+![Kamva MindPal](Kamva MindPal.png)
 
 ## Description
 
