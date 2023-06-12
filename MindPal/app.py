@@ -11,12 +11,12 @@ from routes import api_db
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 
-# basedir = os.path.abspath(os.path.dirname(__file__))
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] =\
-#    'sqlite:///' + os.path.join(basedir, 'mindpal.db')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql:///admin:admin123@localhost/mindpal_db'
+app.config['SQLALCHEMY_DATABASE_URI'] =\
+    'sqlite:///' + os.path.join(basedir, 'mindpal.db')
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql:///admin:admin123@localhost/mindpal_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'secrete secret key'
 migrate = Migrate(app, db)
