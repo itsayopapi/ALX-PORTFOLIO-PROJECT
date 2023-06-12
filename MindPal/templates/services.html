@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kamva MindPal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('services') }}">Services</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li class="get-started-btn" id="get-started-btn"><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        <li class="get-started-btn" id="get-started-btn"><a href="{{ url_for('login') }}">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="heading">Welcome to Kamva MindPal</h1>
+    
+    <h2 class="sub-heading">Services</h2>
+    <p class="intro">
+      At Kamva MindPal, we offer a range of services designed to address various mental health concerns and support your well-being. Our team of professionals is dedicated to providing personalized care and helping you achieve mental wellness.
+    </p>
+
+    <div class="services">
+      <div class="service">
+        <h3>Therapy Sessions</h3>
+        <p>Our licensed therapists provide individual, couples, and family therapy sessions. We offer a safe and supportive environment where you can explore your thoughts and emotions, gain insights, and develop coping strategies.</p>
+      </div>
+      <div class="service">
+        <h3>Mindfulness Workshops</h3>
+        <p>Join our mindfulness workshops to learn and practice techniques for stress reduction, relaxation, and cultivating present-moment awareness. These workshops are suitable for individuals of all experience levels.</p>
+      </div>
+      <div class="service">
+        <h3>Support Groups</h3>
+        <p>Connect with others who share similar experiences in our supportive and confidential support groups. Our facilitators create a nurturing space where you can share, learn, and find encouragement on your mental health journey.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
+  </footer>
+
+  <div id="login-popup" class="login-popup">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form id="login-form" onsubmit="return validateLoginForm()">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="toggleSignupForm()">Sign up</a></p>
+    </div>
+  </div>
+
+  <div id="signup-popup" class="signup-popup">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form id="signup-form" onsubmit="return validateSignupForm()">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" onclick="toggleLoginForm()">Log in</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

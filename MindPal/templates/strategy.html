@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <span class="title"><h1>{% block title %}Strategy for {{ condition.condition_name }} {% endblock title %}</h1></span>
+    <div class="content">
+        <p>"Hey there! Just a friendly reminder: the suggested strategy can truly work wonders, but remember, it's all about putting it into action and applying it to your own life. You've got this!" </p>
+    </div>
+    <a href="{{ url_for('strategy_details', strategy_id=condition.id) }}">View Details</a>
+{% endblock %}

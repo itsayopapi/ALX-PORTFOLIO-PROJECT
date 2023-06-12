@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kamva MindPal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('services') }}">Services</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li class="get-started-btn" id="get-started-btn"><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        <li class="get-started-btn" id="get-started-btn"><a href="{{ url_for('login') }}">Log In</a></li>        
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="heading">Welcome to Kamva MindPal</h1>
+    
+    <h2 class="sub-heading">About Us</h2>
+    <p class="intro">
+      At Kamva MindPal, we understand the importance of mental health and the impact it has on one's overall well-being. Our mission is to provide accessible and personalized mental health care to individuals in need.
+    </p>
+    <p>
+      Our team of experienced and compassionate professionals is dedicated to supporting you on your journey towards mental wellness. We offer a wide range of services and resources to help you navigate through various mental health challenges, including anxiety, depression, and stress.
+    </p>
+    <p>
+      Through a combination of evidence-based therapies, personalized treatment plans, and a supportive community, we strive to empower individuals to take control of their mental health and live fulfilling lives. We believe that everyone deserves access to quality mental health care, and we are committed to breaking down barriers and promoting inclusivity.
+    </p>
+    <p>
+      Whether you are seeking therapy, looking for educational resources, or wanting to connect with others who share similar experiences, Kamva MindPal is here to provide the support and guidance you need. Together, we can embark on a journey of healing and growth.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Kamva MindPal. All rights reserved.</p>
+  </footer>
+
+  <div id="login-popup" class="login-popup">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form id="login-form" onsubmit="return validateLoginForm()">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" onclick="toggleSignupForm()">Sign up</a></p>
+    </div>
+  </div>
+
+  <div id="signup-popup" class="signup-popup">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form id="signup-form" onsubmit="return validateSignupForm()">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" onclick="toggleLoginForm()">Log in</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

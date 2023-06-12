@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+    <span class="title"><h1>{% block title %} Feelings {% endblock title %} </h1></span>
+    <div class="content">
+        {% for condition in conditions %}
+            <div class="conditions">
+                <b>
+                    <p class="title">
+                        <a href="{{ url_for('strategy', condition_id=condition.id) }}">
+                            {{ condition.condition_name }}
+                        </a>
+                    </p>
+                </b>
+                <hr>
+                {% if strategies[condition.id] %}
+                <ul>
+                    {% for strategy in strategies[condition.id] %}
+                        <li>{{ strategy.strategy_name }}</li>
+                    {% endfor %}           
+                </ul>
+                {% endif %}
+            </div>  
+        {% endfor %} 
+    </div>
+{% endblock %}
