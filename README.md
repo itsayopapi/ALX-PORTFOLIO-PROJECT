@@ -72,7 +72,7 @@ Please note that the deployed application is hosted separately from the GitHub r
 
 ## Technologies Used
 
-- HTML
+- HTML templates
 - CSS
 - JavaScript
 - [Library/Framework Name]
